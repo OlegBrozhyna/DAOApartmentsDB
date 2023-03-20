@@ -111,7 +111,7 @@ public class ApartmentsDAOImpl implements ApartmentDAO {
         return getApartmentsFromResultSet(resultSet);
     }
 
-    // Получение списка квартир по адресу
+    
     @Override
     public List<Apartment> getByAddress(String address) {
         try (PreparedStatement ps = conn.prepareStatement(
@@ -125,7 +125,7 @@ public class ApartmentsDAOImpl implements ApartmentDAO {
         }
     }
 
-    // Получение списка квартир по площади
+    
     @Override
     public List<Apartment> getByArea(float minArea, float maxArea) {
         try (PreparedStatement ps = conn.prepareStatement(
